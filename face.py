@@ -2,7 +2,8 @@ import cv2
 import serial,time
 import numpy as np
 face_cascade= cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-capture=cv2.Videocaptureture(0)
+capture = cv2.VideoCapture(0)
+
 #fourcc= cv2.VideoWriter_fourcc(*'XVID')
 ArduinoSerial=serial.Serial('com6',9600,timeout=0.1)
 #out= cv2.VideoWriter('face detection4.avi',fourcc,20.0,(640,480))
